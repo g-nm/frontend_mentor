@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | QR code component</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			*,
+			*::after,
+			*::before {
+				box-sizing: border-box;
+			}
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: "Outfit", sans-serif;
+			}
+			main {
+				background-color: hsl(212, 45%, 89%);
+				min-height: 100vh;
+				display: flex;
+				align-items: center;
+			}
+			img {
+				max-width: 100%;
+			}
+			h1 {
+				font-size: 25px;
+				font-weight: 700;
+				color: hsl(218, 44%, 22%);
+			}
+			p {
+				font-size: 18px;
+				color: hsl(220, 15%, 55%);
+			}
+			img {
+				border-radius: 10px;
+			}
+
+			.container {
+				width: 90%;
+				max-width: 350px;
+				margin: 0 auto;
+			}
+			.qr__card {
+				text-align: center;
+				background: #fff;
+				padding: 1em;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<div class="qr__card">
+					<img
+						src="images/image-qr-code.png"
+						alt="Qr Code to frontent mentor website"
+					/>
+					<h1>Improve your front-end skills by building projects</h1>
+					<p>
+						Scan the QR code to visit Frontend Mentor and take your coding
+						skills to the next level
+					</p>
+				</div>
+				<div class="attribution">
+					Challenge by
+					<a
+						href="https://www.frontendmentor.io?ref=challenge"
+						target="_blank"
+						>Frontend Mentor</a
+					>. Coded by <a href="#">George @gnm</a>.
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

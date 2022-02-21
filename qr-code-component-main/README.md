@@ -36,7 +36,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
--  Website - [George](https://www.your-site.com)
--  Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+-  Frontend Mentor - [@G-nm](https://www.frontendmentor.io/profile/yourusername)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**

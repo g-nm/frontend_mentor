@@ -43,7 +43,7 @@ p {
 	border-radius: 10px;
 }
 .nft__card-img:hover::before {
-	background: url(/images/icon-view.svg), rgba(0, 255, 248, 50%);
+	background: url("/images/icon-view.svg"), rgba(0, 255, 248, 50%);
 	background-repeat: no-repeat;
 	background-position: center;
 }

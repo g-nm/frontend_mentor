@@ -84,6 +84,9 @@ span.card__details-time {
 span.card__details-time {
 	color: #8bacd9;
 }
+span.card__details-time span {
+	padding: 1em 0;
+}
 span.card__details-price {
 	color: #00fff8;
 }

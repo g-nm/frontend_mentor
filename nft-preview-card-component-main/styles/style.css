@@ -43,7 +43,8 @@ p {
 	border-radius: 10px;
 }
 .nft__card-img:hover::before {
-	background: url("/images/icon-view.svg"), rgba(0, 255, 248, 50%);
+	background: url("https://g-nm.github.io/frontend_mentor/nft-preview-card-component-main/images/icon-view.svg"),
+		rgba(0, 255, 248, 50%);
 	background-repeat: no-repeat;
 	background-position: center;
 }

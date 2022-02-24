@@ -7,8 +7,8 @@
 	--accent--color: #aa5cdb;
 	--sub-text--color: hsla(0, 0%, 100%, 0.75);
 	--tes: calc(1rem + 7px);
-	--fs: clamp(15px, 1vw + 0.5rem, 2rem);
-	--fs-l: clamp(15px, 3vw + 1rem, 2.7rem);
+	--fs: clamp(15px, 1vw + 0.5rem, 1rem);
+	--fs-l: clamp(15px, 2vw + 1.2rem, 2.2rem);
 }
 body {
 	margin: 0;
@@ -29,7 +29,7 @@ main {
 .container {
 	width: 90%;
 	margin: auto;
-	max-width: 1200px;
+	max-width: 1000px;
 }
 .wrapper {
 	background: hsl(244, 38%, 16%);
@@ -77,10 +77,7 @@ main {
 	color: hsla(0, 0%, 100%, 0.6);
 	padding-top: 0.3em;
 }
-picture {
-	max-width: 100%;
-	width: 100%;
-}
+
 @media (min-width: 700px) {
 	.row {
 		display: flex;

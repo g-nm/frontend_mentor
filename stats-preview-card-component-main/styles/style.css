@@ -2,13 +2,18 @@
 *::after,
 *::before {
 	box-sizing: border-box;
+}
+:root {
 	--accent--color: #aa5cdb;
 	--sub-text--color: hsla(0, 0%, 100%, 0.75);
+	--tes: calc(1rem + 7px);
+	--fs: clamp(15px, 1vw + 0.5rem, 2rem);
+	--fs-l: clamp(15px, 3vw + 1rem, 2.7rem);
 }
 body {
 	margin: 0;
 	font-family: "Inter", sans-serif;
-	font-size: 15px;
+	font-size: var(--fs);
 }
 img {
 	max-width: 100%;
@@ -24,7 +29,7 @@ main {
 .container {
 	width: 90%;
 	margin: auto;
-	max-width: 850px;
+	max-width: 1200px;
 }
 .wrapper {
 	background: hsl(244, 38%, 16%);
@@ -47,10 +52,10 @@ main {
 }
 .hero__text {
 	text-align: center;
-	padding: 1em 1em 2em;
+	padding: 1em;
 }
 .hero__title {
-	font-size: 25px;
+	font-size: var(--fs-l);
 	font-weight: 700;
 }
 .accent__text {
@@ -58,19 +63,18 @@ main {
 }
 .hero__text-content {
 	color: var(--sub-text--color);
+	line-height: 1.7;
 }
 .hero__stat {
 	margin-top: 1.5em;
 }
 .hero__stat-detail {
 	font-weight: 700;
-	font-size: 21px;
 }
 .hero__stat-text {
 	text-transform: uppercase;
 	font-family: "Lexend Deca", sans-serif;
 	color: hsla(0, 0%, 100%, 0.6);
-	font-size: 15px;
 	padding-top: 0.3em;
 }
 picture {
@@ -92,6 +96,7 @@ picture {
 		border-radius: 0 10px 10px 0;
 		object-fit: cover;
 		min-height: 100%;
+		width: 100%;
 	}
 	.hero__image::before {
 		content: "";
@@ -103,7 +108,7 @@ picture {
 	}
 	.hero__text {
 		text-align: left;
-		padding: 0 2em 1em;
+		padding: 1em 2em 1em;
 		/* padding-inline: 2em; */
 		margin: auto;
 	}

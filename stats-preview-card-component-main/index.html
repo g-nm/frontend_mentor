@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Stats preview card component</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/style.css" />
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<section aria-labelledby="title" class="wrapper row">
+					<div class="hero__image col">
+						<picture>
+							<source
+								media="(min-width:700px)"
+								srcset="images/image-header-desktop.jpg"
+							/>
+							<img
+								src="images/image-header-mobile.jpg"
+								alt="people working at a table"
+							/>
+						</picture>
+					</div>
+					<div class="hero__text col">
+						<h1 class="hero__title">
+							Get <span class="accent__text">insights</span> that help
+							your business grow.
+						</h1>
+						<p class="hero__text-content">
+							Discover the benefits of data analytics and make better
+							decisions regarding revenue, customer experience, and
+							overall efficiency.
+						</p>
+						<div class="hero__stats row">
+							<div class="hero__stat">
+								<span class="hero__stat-detail">10k+ </span>
+								<div class="hero__stat-text">companies</div>
+							</div>
+							<div class="hero__stat">
+								<span class="hero__stat-detail"> 314 </span>
+								<div class="hero__stat-text">templates</div>
+							</div>
+							<div class="hero__stat">
+								<span class="hero__stat-detail"> 12M+ </span>
+								<div class="hero__stat-text">queries</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- <div class="attribution">
+					Challenge by
+					<a
+						href="https://www.frontendmentor.io?ref=challenge"
+						target="_blank"
+						>Frontend Mentor</a
+					>. Coded by <a href="#">Your Name Here</a>.
+				</div> -->
+			</div>
+		</main>
+	</body>
+</html>

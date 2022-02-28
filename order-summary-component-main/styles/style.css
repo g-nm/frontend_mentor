@@ -81,7 +81,8 @@ main {
 	font-size: 14px;
 	font-weight: 700;
 }
-.plan__link:hover {
+.plan__link:hover,
+.plan__link:focus {
 	text-decoration: none;
 	color: hsl(245, 75%, 62%);
 }
@@ -105,7 +106,8 @@ main {
 	margin-top: 1em;
 	transition: background-color 200ms, color 200ms;
 }
-.btn__accent:hover {
+.btn__accent:hover,
+.btn__accent:focus {
 	background-color: hsl(245, 75%, 62%);
 	color: #fff;
 }
@@ -113,7 +115,8 @@ main {
 .btn__transparent {
 	color: hsl(224, 23%, 55%);
 }
-.btn__transparent:hover {
+.btn__transparent:hover,
+.btn__transparent:focus {
 	color: hsl(224, 23%, 25%);
 }
 @media (min-width: 375px) {

@@ -18,7 +18,8 @@ img {
 	display: block;
 }
 main {
-	background: url("images/pattern-background-mobile.svg") hsl(225, 100%, 94%);
+	background: url("https://g-nm.github.io/frontend_mentor/order-summary-component-main/images/pattern-background-mobile.svg")
+		hsl(225, 100%, 94%);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	min-height: 100vh;
@@ -116,7 +117,7 @@ main {
 }
 @media (min-width: 375px) {
 	main {
-		background: url("images/pattern-background-desktop.svg")
+		background: url("https://g-nm.github.io/frontend_mentor/order-summary-component-main/images/pattern-background-desktop.svg")
 			hsl(225, 100%, 94%);
 		background-repeat: no-repeat;
 		background-size: 100%;

@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: "Red Hat Display", sans-serif;
+	font-size: 16px;
+	color: hsl(223, 47%, 23%);
+}
+p {
+	margin-top: 0;
+	padding-top: 0;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+main {
+	background: url(/images/pattern-background-mobile.svg) hsl(225, 100%, 94%);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 100vh;
+	display: flex;
+}
+
+.container {
+	width: 90%;
+	max-width: 375px;
+	margin: auto;
+}
+.wrapper {
+	background-color: hsl(225, 100%, 98%);
+	border-radius: 20px;
+	padding-bottom: 1em;
+}
+.hero__img {
+	border-radius: 20px 20px 0 0;
+}
+.hero__section {
+	width: 90%;
+	margin: 0 auto;
+}
+.hero__section .hero__title,
+.hero__text {
+	text-align: center;
+}
+.hero__title {
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+}
+.hero__text {
+	color: hsl(224, 23%, 55%);
+	width: 90%;
+	margin-inline: auto;
+}
+.hero__section-plan {
+	background-color: hsla(225, 100%, 94%, 50%);
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 1em;
+	border-radius: 5px;
+	padding: 0.85em;
+}
+.plan__text {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-weight: 700;
+}
+.plan__text-neutral {
+	color: hsl(224, 23%, 55%);
+	font-weight: 400;
+}
+.plan__link {
+	font-size: 14px;
+	font-weight: 700;
+}
+.plan__link:hover {
+	text-decoration: none;
+	color: hsl(245, 75%, 62%);
+}
+.btn {
+	display: block;
+	border: none;
+	background: none;
+	font-size: 16px;
+	text-align: center;
+	padding: 1em;
+	width: 100%;
+	border-radius: 10px;
+	font-weight: 900;
+	cursor: pointer;
+	transition: background-color 200ms, color 200ms;
+}
+.btn__accent {
+	background-color: #382ae1;
+	color: hsl(225, 100%, 94%);
+	box-shadow: 0px 10px 20px rgba(56, 42, 225, 40%);
+	margin-top: 1em;
+	transition: background-color 200ms, color 200ms;
+}
+.btn__accent:hover {
+	background-color: hsl(245, 75%, 62%);
+	color: #fff;
+}
+
+.btn__transparent {
+	color: hsl(224, 23%, 55%);
+}
+.btn__transparent:hover {
+	color: hsl(224, 23%, 25%);
+}
+@media (min-width: 375px) {
+	main {
+		background: url(/images/pattern-background-desktop.svg)
+			hsl(225, 100%, 94%);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+}

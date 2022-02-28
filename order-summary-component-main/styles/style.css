@@ -18,10 +18,10 @@ img {
 	display: block;
 }
 main {
-	background: url("https://g-nm.github.io/frontend_mentor/order-summary-component-main/images/pattern-background-mobile.svg")
-		hsl(225, 100%, 94%);
+	background-image: url("https://g-nm.github.io/frontend_mentor/order-summary-component-main/images/pattern-background-mobile.svg");
+	background-color: hsl(225, 100%, 94%);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: contain;
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -121,9 +121,6 @@ main {
 }
 @media (min-width: 375px) {
 	main {
-		background: url("https://g-nm.github.io/frontend_mentor/order-summary-component-main/images/pattern-background-desktop.svg")
-			hsl(225, 100%, 94%);
-		background-repeat: no-repeat;
-		background-size: 100%;
+		background-image: url("https://g-nm.github.io/frontend_mentor/order-summary-component-main/images/pattern-background-desktop.svg");
 	}
 }

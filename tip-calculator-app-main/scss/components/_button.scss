@@ -1,0 +1,31 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/fonts";
+
+.tip__buttons {
+	margin-block-start: 1em;
+}
+.btn {
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	padding-block: 0.25rem;
+	border-radius: 5px;
+	font-size: fonts.$inputfontsize;
+	text-align: center;
+}
+.btn__primary {
+	text-transform: uppercase;
+	background-color: $primarycolor;
+	color: $primarycolor__dark;
+	padding-block: 0.5rem;
+	font-size: 21px;
+}
+.btn__accent {
+	background-color: $primarycolor__dark;
+	color: $primarycolor__light-gray2;
+}
+.btn__accent:hover,
+.btn__accent:focus {
+	background-color: $primarycolor;
+	color: $primarycolor__dark;
+}

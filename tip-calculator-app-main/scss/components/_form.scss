@@ -1,0 +1,60 @@
+@use "../abstracts/colors" as *;
+@use "../utils/layout";
+@use "input";
+@use "button";
+
+.form__wrapper {
+	background-color: $White;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+
+	& fieldset {
+		border: none;
+		width: 90%;
+		margin-inline: auto;
+		padding-top: 1.5em;
+
+		& label {
+			display: block;
+			font-weight: 700;
+			color: $primarycolor__dark-gray1;
+			margin-bottom: 0.5em;
+		}
+		& .tip__sum {
+			background-color: $primarycolor__dark;
+			color: $White;
+			padding: 2em 1em 1em;
+			display: grid;
+			gap: 1.5em;
+			border-radius: 15px;
+			font-weight: 700;
+
+			& .tip__amount,
+			.total__amount {
+				color: $primarycolor;
+				font-size: 2rem;
+				font-weight: 700;
+			}
+			& .gray__text {
+				color: $primarycolor__dark-gray2;
+				font-size: 14px;
+			}
+		}
+
+		& input[type="radio"] {
+			position: absolute;
+			opacity: 0;
+		}
+		& input[type="radio"] + label {
+			color: $primarycolor__light-gray2;
+			margin-bottom: 0;
+		}
+		& input[type="radio"]:checked + label {
+			background-color: $primarycolor;
+			color: $primarycolor__dark;
+		}
+		& input[type="radio"]:focus + label {
+			outline: 2px solid skyblue;
+		}
+	}
+}

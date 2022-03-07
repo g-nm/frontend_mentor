@@ -9,13 +9,21 @@
 }
 body {
 	margin: 0;
+	position: relative;
+	font-size: clamp(1rem, 2.5vw, 21px);
 }
 img {
 	max-width: 100%;
 	display: block;
 }
 main {
+	min-height: 100%;
 	background-color: colors.$primarycolor__light-gray1;
+	@media screen and (min-width: 700px) {
+		display: grid;
+		place-items: center;
+		min-height: 100vh;
+	}
 }
 .visually-hidden {
 	clip: rect(0 0 0 0);

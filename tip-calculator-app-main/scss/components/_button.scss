@@ -19,6 +19,7 @@
 	color: $primarycolor__dark;
 	padding-block: 0.5rem;
 	font-size: 21px;
+	align-self: end;
 }
 .btn__accent {
 	background-color: $primarycolor__dark;
@@ -28,4 +29,9 @@
 .btn__accent:focus {
 	background-color: $primarycolor;
 	color: $primarycolor__dark;
+}
+.btn:disabled {
+	background-color: lighten($color: $primarycolor__dark, $amount: 5);
+	color: lighten($color: $primarycolor__dark, $amount: 8);
+	cursor: not-allowed;
 }

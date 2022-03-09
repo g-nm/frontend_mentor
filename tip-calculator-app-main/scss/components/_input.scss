@@ -1,5 +1,9 @@
 @use "../abstracts/fonts";
 @use "../abstracts/colors" as *;
+
+input {
+	cursor: pointer;
+}
 input[type="number"] {
 	width: 100%;
 	font-size: fonts.$inputfontsize;
@@ -13,6 +17,9 @@ input[type="number"] {
 	text-align: end;
 	position: relative;
 	display: block;
+}
+input[type="number"]:valid {
+	outline: none;
 }
 .wrapper__people,
 .wrapper__bill {

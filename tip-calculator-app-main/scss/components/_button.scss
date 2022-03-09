@@ -12,6 +12,8 @@
 	border-radius: 5px;
 	font-size: fonts.$inputfontsize;
 	text-align: center;
+	font-weight: 700;
+	transition: background-color 1s ease, color 1s ease;
 }
 .btn__primary {
 	text-transform: uppercase;
@@ -20,6 +22,10 @@
 	padding-block: 0.5rem;
 	font-size: 21px;
 	align-self: end;
+}
+.btn__primary:hover,
+.btn__primary:focus {
+	background-color: lighten($color: $primarycolor, $amount: 25);
 }
 .btn__accent {
 	background-color: $primarycolor__dark;

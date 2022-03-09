@@ -35,6 +35,7 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="css/index.css" />
+		<script src="index.js" defer></script>
 	</head>
 	<body>
 		<main>
@@ -54,23 +55,48 @@
 								Tip Calculator form
 							</legend>
 							<div class="col">
-								<label for="bill__amount" class="bill__amount-label"
-									>Bill</label
-								>
+								<div class="label__container">
+									<label for="bill__amount" class="bill__amount-label"
+										>Bill</label
+									>
+									<span
+										id="bill__amount-alert"
+										aria-live="assertive"
+										class="alert"
+									></span>
+								</div>
 								<div class="wrapper__bill">
 									<input
 										type="number"
 										step="0.01"
 										id="bill__amount"
 										class="bill__amount"
+										required
+										aria-describedby="bill__amount-alert"
+										min="1"
+										name="bill__amount"
+										autocomplete="off"
 									/>
 								</div>
 							</div>
 							<div class="col">
-								<label for="custom">Select Tip%</label>
+								<div class="label__container">
+									<label for="custom">Select Tip %</label>
+									<span
+										id="percentage__alert"
+										aria-live="assertive"
+										class="alert"
+									></span>
+								</div>
 								<div class="row tip__buttons">
 									<div class="">
-										<input type="radio" name="percentage" id="5" />
+										<input
+											type="radio"
+											name="percentage"
+											id="5"
+											value="5"
+											required
+										/>
 										<label for="5" class="btn btn__accent">5%</label>
 									</div>
 									<div>
@@ -78,6 +104,7 @@
 											type="radio"
 											name="percentage"
 											id="10"
+											value="10"
 										/><label for="10" class="btn btn__accent"
 											>10%</label
 										>
@@ -87,6 +114,7 @@
 											type="radio"
 											name="percentage"
 											id="15"
+											value="15"
 										/><label for="15" class="btn btn__accent"
 											>15%</label
 										>
@@ -96,6 +124,7 @@
 											type="radio"
 											name="percentage"
 											id="20"
+											value="20"
 										/><label for="20" class="btn btn__accent"
 											>20%</label
 										>
@@ -105,6 +134,7 @@
 											type="radio"
 											name="percentage"
 											id="50"
+											value="50"
 										/><label for="50" class="btn btn__accent"
 											>50%</label
 										>
@@ -115,17 +145,34 @@
 										name="custom"
 										id="custom"
 										placeholder="Custom"
+										min="1"
+										max="100"
+										class="custom"
+										aria-describedby="percentage__alert"
+										autocomplete="off"
 									/>
 								</div>
 							</div>
 							<div class="col">
-								<label for="people">Number of People</label>
+								<div class="label__container">
+									<label for="people">Number of People</label>
+									<span
+										id="people__alert"
+										aria-live="assertive"
+										class="alert"
+									></span>
+								</div>
+
 								<div class="wrapper__people">
 									<input
 										type="number"
 										name="people"
 										id="people"
 										class="people"
+										required
+										min="1"
+										aria-describedby="people__alert"
+										autocomplete="off"
 									/>
 								</div>
 							</div>

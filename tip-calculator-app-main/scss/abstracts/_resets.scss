@@ -10,7 +10,7 @@
 body {
 	margin: 0;
 	position: relative;
-	font-size: clamp(1rem, 2.5vw, 21px);
+	font-size: fonts.$bodyfontsize;
 }
 img {
 	max-width: 100%;

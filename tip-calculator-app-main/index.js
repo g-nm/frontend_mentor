@@ -35,13 +35,14 @@ function setValidityError(event) {
 
 function calculateTotals(event) {
 	const result = form.checkValidity();
+
 	reset.removeAttribute("disabled");
 	if (!result) {
 		return;
 	}
-
 	const bill__amount = document.querySelector(".bill__amount").value;
 	const percentage = getPercentage();
+
 	// get percentage
 	const people = document.querySelector(".people").value;
 	// get number of people
@@ -50,8 +51,9 @@ function calculateTotals(event) {
 		parseFloat(bill__amount)
 	).toFixed(2);
 	const tipamountperperson = (total / parseInt(people)).toFixed(2);
-	tip_amount.innerText = tipamountperperson;
-	total_amount.innerText = total;
+
+	tip_amount.innerText = `$${tipamountperperson}`;
+	total_amount.innerText = `$${total}`;
 }
 function getPercentage() {
 	const percentage =
@@ -69,6 +71,8 @@ form.addEventListener("reset", () => {
 	alerts.forEach((alert) => {
 		alert.innerText = "";
 	});
+	tip_amount.innerText = "$0.00";
+	total_amount.innerText = "$0.00";
 });
 custom.addEventListener(
 	"input",
@@ -78,8 +82,6 @@ custom.addEventListener(
 			button.removeAttribute("required");
 		});
 		custom.setAttribute("required", "true");
-		tip_amount.innerText = 0.0;
-		total_amount.innerText = 0.0;
 	},
 	true
 );

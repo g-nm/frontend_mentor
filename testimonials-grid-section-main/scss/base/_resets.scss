@@ -1,0 +1,26 @@
+@use '../abstracts/variable' as *;
+@use '../base/typography';
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body {
+	margin: 0;
+	font-size: typography.$fontsize;
+	background-color: $light-grayish-blue;
+	position: relative;
+}
+img {
+	max-width: 100%;
+}
+main {
+	display: grid;
+	place-items: center;
+	padding-block: 2em;
+	min-height: 100vh;
+}
+h1 {
+	margin-top: 0.5em;
+}

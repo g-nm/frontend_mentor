@@ -19,17 +19,22 @@
 			.attribution {
 				font-size: 11px;
 				text-align: center;
+				position: absolute;
+				bottom: 0;
+				display: block;
+				width: 100%;
 			}
 			.attribution a {
 				color: hsl(228, 45%, 44%);
 			}
 		</style>
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
 		<main>
-			<div class="container">
-				<section class="card">
-					<div>
+			<div class="container grid">
+				<section class="card" aria-describedby="primary-text">
+					<div class="user--title">
 						<img
 							src="images/image-daniel.jpg"
 							alt="potrait of Daniel Clifford"
@@ -40,7 +45,7 @@
 							<div class="user__info-title">Verified Graduate</div>
 						</div>
 					</div>
-					<h1 class="primary__text">
+					<h1 class="primary__text" id="primary-text">
 						I received a job offer mid-course, and the subjects I learned
 						were current, if not more so, in the company I joined. I
 						honestly feel I got every penny’s worth.
@@ -56,8 +61,8 @@
 						at a VR startup. ”
 					</p>
 				</section>
-				<section class="card">
-					<div>
+				<section class="card" aria-describedby="primary-text">
+					<div class="user--title">
 						<img
 							src="images/image-jonathan.jpg"
 							alt="potrait of Jonathan Walters"
@@ -68,7 +73,7 @@
 							<div class="user__info-title">Verified Graduate</div>
 						</div>
 					</div>
-					<h1 class="primary__text">
+					<h1 class="primary__text" id="primary-text">
 						The team was very supportive and kept me motivated
 					</h1>
 					<p class="user__story">
@@ -77,8 +82,8 @@
 						one of the best investments I’ve made in myself. ”
 					</p>
 				</section>
-				<section class="card">
-					<div>
+				<section class="card" aria-describedby="primary-text">
+					<div class="user--title">
 						<img
 							src="images/image-jeanette.jpg"
 							alt="potrait of Jeanette Harmon"
@@ -89,13 +94,17 @@
 							<div class="user__info-title">Verified Graduate</div>
 						</div>
 					</div>
-					<h1 class="primary__text">
+					<h1 class="primary__text" id="primary-text">
 						An overall wonderful and rewarding experience
 					</h1>
-					<p class="user__story"></p>
+					<p class="user__story">
+						"Thank you for the wonderful experince! I now have a job I
+						really enjoy, and make a good living while doing something I
+						love."
+					</p>
 				</section>
-				<section class="card">
-					<div>
+				<section class="card" aria-describedby="primary-text">
+					<div class="user--title">
 						<img
 							src="images/image-patrick.jpg"
 							alt="potrait of Patrick Abrams"
@@ -106,7 +115,7 @@
 							<div class="user__info-title">Verified Graduate</div>
 						</div>
 					</div>
-					<h1 class="primary__text">
+					<h1 class="primary__text" id="primary-text">
 						Awesome teaching support from TAs who did the bootcamp
 						themselves. Getting guidance from them and learning from their
 						experiences was easy.
@@ -120,8 +129,8 @@
 						incredible community of smart and amazing people. ”
 					</p>
 				</section>
-				<section class="card">
-					<div>
+				<section class="card" aria-describedby="primary-text">
+					<div class="user--title">
 						<img
 							src="images/image-kira.jpg"
 							alt="potrait of Kira Whittle"
@@ -132,7 +141,7 @@
 							<div class="user__info-title">Verified Graduate</div>
 						</div>
 					</div>
-					<h1 class="primary__text">
+					<h1 class="primary__text" id="primary-text">
 						Such a life-changing experience. Highly recommended!
 					</h1>
 					<p class="user__story">
@@ -157,7 +166,7 @@
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+			>. Coded by <a href="#">G-nm</a>.
 		</div>
 	</body>
 </html>

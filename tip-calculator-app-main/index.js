@@ -1,23 +1,23 @@
-const form = document.querySelector("form");
-const custom = document.querySelector(".custom");
-const radiobuttons = document.querySelectorAll("[name=percentage]");
-const tip_amount = document.querySelector(".tip__amount");
-const total_amount = document.querySelector(".total__amount");
-const reset = document.querySelector("[type=reset]");
+const form = document.querySelector('form');
+const custom = document.querySelector('.custom');
+const radiobuttons = document.querySelectorAll('[name=percentage]');
+const tip_amount = document.querySelector('.tip__amount');
+const total_amount = document.querySelector('.total__amount');
+const reset = document.querySelector('[type=reset]');
 
 function setValidityError(event) {
 	try {
 		const isValid = event.target.validity.valid;
 		const validationMessage = event.target.validationMessage;
-		const validationId = event.target.getAttribute("aria-describedby");
+		const validationId = event.target.getAttribute('aria-describedby');
 		const validationComponent = validationId
 			? document.getElementById(validationId)
 			: false;
 
 		if (!isValid && validationMessage && validationComponent) {
 			event.target.style.setProperty(
-				"outline",
-				"2px solid rgba(231, 53, 8, 0.904)"
+				'outline',
+				'2px solid rgba(231, 53, 8, 0.904)'
 			);
 			if (event.target.validity.rangeUnderflow) {
 				validationComponent.innerText = "Can't be zero";
@@ -25,31 +25,28 @@ function setValidityError(event) {
 				validationComponent.innerText = validationMessage;
 			}
 		} else {
-			validationComponent.innerText = "";
-			event.target.style.setProperty("outline", "none");
+			validationComponent.innerText = '';
+			event.target.style.setProperty('outline', 'none');
 		}
 	} catch (error) {
 		// console.log(error);
 	}
 }
 
-function calculateTotals(event) {
+function calculateTotals() {
 	const result = form.checkValidity();
 
-	reset.removeAttribute("disabled");
+	reset.removeAttribute('disabled');
 	if (!result) {
 		return;
 	}
-	const bill__amount = document.querySelector(".bill__amount").value;
+	const bill__amount = document.querySelector('.bill__amount').value;
 	const percentage = getPercentage();
 
 	// get percentage
-	const people = document.querySelector(".people").value;
+	const people = document.querySelector('.people').value;
 	// get number of people
-	const total = (
-		(parseInt(percentage) / 100) *
-		parseFloat(bill__amount)
-	).toFixed(2);
+	const total = ((percentage / 100) * parseFloat(bill__amount)).toFixed(2);
 	const tipamountperperson = (total / parseInt(people)).toFixed(2);
 
 	tip_amount.innerText = `$${tipamountperperson}`;
@@ -57,41 +54,41 @@ function calculateTotals(event) {
 }
 function getPercentage() {
 	const percentage =
-		document.querySelector("input:checked")?.value ?? custom.value;
+		document.querySelector('input:checked')?.value ?? custom.value;
 
-	return percentage;
+	return parseInt(percentage);
 }
 
-form.addEventListener("reset", () => {
-	const alerts = document.querySelectorAll(".alert");
-	const inputswitharia = document.querySelectorAll("[aria-describedby]");
+form.addEventListener('reset', () => {
+	const alerts = document.querySelectorAll('.alert');
+	const inputswitharia = document.querySelectorAll('[aria-describedby]');
 	inputswitharia.forEach((input) => {
-		input.style.setProperty("outline", "none");
+		input.style.setProperty('outline', 'none');
 	});
 	alerts.forEach((alert) => {
-		alert.innerText = "";
+		alert.innerText = '';
 	});
-	tip_amount.innerText = "$0.00";
-	total_amount.innerText = "$0.00";
+	tip_amount.innerText = '$0.00';
+	total_amount.innerText = '$0.00';
 });
 custom.addEventListener(
-	"input",
+	'input',
 	() => {
 		Array.from(radiobuttons).forEach((button) => {
 			button.checked = false;
-			button.removeAttribute("required");
+			button.removeAttribute('required');
 		});
-		custom.setAttribute("required", "true");
+		custom.setAttribute('required', 'true');
 	},
 	true
 );
 Array.from(radiobuttons).forEach((radiobutton) =>
-	radiobutton.addEventListener("change", (e) => {
-		custom.removeAttribute("required");
-		radiobutton.setAttribute("required", "true");
+	radiobutton.addEventListener('change', (e) => {
+		custom.removeAttribute('required');
+		radiobutton.setAttribute('required', 'true');
 		custom.value = null;
 	})
 );
 
-form.addEventListener("input", calculateTotals);
-document.addEventListener("blur", setValidityError, true);
+form.addEventListener('input', calculateTotals);
+document.addEventListener('blur', setValidityError, true);

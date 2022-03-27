@@ -1,0 +1,39 @@
+@use 'navigation';
+@use '../abstracts/variables' as color;
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.absolute {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 75%;
+}
+.header__navigation {
+	padding-block-start: 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__title {
+	color: white;
+
+	text-transform: uppercase;
+	margin-top: 2em;
+	margin-bottom: 0;
+	font-family: 'Fraunces', sans-serif;
+	letter-spacing: 7px;
+	font-weight: 900;
+}
+.header__img-arrow {
+	margin-inline: auto;
+	margin-block-start: 2em;
+}
+.header__hamburger {
+	border: none;
+	background-color: transparent;
+}

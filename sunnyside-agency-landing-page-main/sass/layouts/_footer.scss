@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as color;
+.footer {
+	background-color: hsl(168, 34%, 71%);
+	text-align: center;
+	padding-block: 3em;
+	position: relative;
+}
+.footer__logo {
+	fill: color.$Dark-desaturated-cyan;
+	margin: 0 auto;
+}
+.footer__links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-block-start: 1.5em;
+	& a {
+		text-decoration: none;
+		color: color.$Dark-desaturated-cyan;
+		font-weight: 500;
+	}
+}
+.footer__icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-block-start: 4em;
+	a + a {
+		margin-inline-start: 1em;
+	}
+}

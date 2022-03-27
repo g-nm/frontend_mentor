@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as color;
+.header__nav {
+	display: none;
+}
+.header__nav-show {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 6em;
+}
+.header__nav-show::before {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: -30px;
+	width: 0;
+	height: 0;
+	border-bottom: 30px solid color.$White;
+	border-left: 30px solid transparent;
+}
+.header__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: color.$White;
+}
+.header__list-item {
+	padding-bottom: 2.5em;
+}
+.header__list-item:first-of-type {
+	padding-top: 2.5em;
+}
+.header__list-link {
+	text-decoration: none;
+	color: color.$Dark-grayish-blue;
+}
+.header__list__link-contact {
+	font-family: 'Fraunces', sans-serif;
+	color: color.$Very-dark-desaturated-blue;
+	text-transform: uppercase;
+	background-color: color.$Yellow;
+	padding: 1em 1.5em;
+	border-radius: 100px;
+}

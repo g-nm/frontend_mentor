@@ -1,0 +1,16 @@
+@use 'typography';
+body {
+	margin: 0;
+	font-family: 'Barlow', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}

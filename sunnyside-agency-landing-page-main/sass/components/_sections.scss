@@ -1,0 +1,78 @@
+@use '../abstracts/variables' as color;
+.section {
+	text-align: center;
+	position: relative;
+}
+.section__content {
+	padding-block: 4em;
+}
+.section__title {
+	font-family: 'Fraunces', sans-serif;
+	color: color.$Very-dark-desaturated-blue;
+	font-size: 1.8em;
+	margin-top: 0;
+	font-weight: 900;
+}
+.section__text {
+	color: color.$Dark-grayish-blue;
+	line-height: 1.7;
+	padding-inline: 0.1em;
+}
+.section__link {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: color.$Very-dark-desaturated-blue;
+	font-family: 'Fraunces', sans-serif;
+	font-weight: 900;
+	position: relative;
+}
+.section__link::after {
+	content: '';
+	width: 110%;
+	height: 10px;
+	// margin: 0 auto;
+	opacity: 0.3;
+	position: absolute;
+	z-index: -1;
+	left: -5%;
+	bottom: 0;
+	border-radius: 20px;
+}
+.section__link-yellow::after {
+	background-color: color.$Yellow;
+}
+.section__link-pink::after {
+	background-color: color.$Soft-red;
+}
+.section__content-absolute {
+	position: absolute;
+	bottom: 1.5em;
+	z-index: 2;
+	width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 16px;
+}
+.section__title-absolute-green {
+	color: color.$Dark-desaturated-cyan;
+}
+.section__text-absolute-green {
+	color: color.$Dark-desaturated-cyan;
+}
+.section__title-absolute-blue {
+	color: color.$Dark-blue;
+}
+.section__text-absolute-blue {
+	color: color.$Dark-blue;
+}
+.section__testimonials {
+	padding: 2em 1em;
+	text-align: center;
+}
+.section__title-testimonials {
+	font-family: 'Fraunces', sans-serif;
+	text-transform: uppercase;
+	color: color.$Grayish-blue;
+	font-size: 1em;
+	letter-spacing: 5px;
+}

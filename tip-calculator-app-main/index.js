@@ -83,7 +83,7 @@ custom.addEventListener(
 	true
 );
 Array.from(radiobuttons).forEach((radiobutton) =>
-	radiobutton.addEventListener('change', (e) => {
+	radiobutton.addEventListener('input', (e) => {
 		custom.removeAttribute('required');
 		radiobutton.setAttribute('required', 'true');
 		custom.value = null;

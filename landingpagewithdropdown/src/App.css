@@ -1,0 +1,17 @@
+.App {
+  position: relative;
+  min-height: inherit;
+  overflow-x: hidden;
+  background-color: var(--almost-white);
+}
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+@media (min-width: 35em) {
+  .App {
+    overflow-x: auto;
+  }
+}

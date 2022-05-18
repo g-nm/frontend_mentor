@@ -1,0 +1,22 @@
+.navigation {
+  padding-block-start: 1.5em;
+  margin-block-end: 1em;
+}
+.btn__navigation {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  position: absolute;
+  z-index: 2;
+  right: 2em;
+}
+@media (min-width: 35em) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+  }
+  .btn__navigation {
+    display: none;
+  }
+}

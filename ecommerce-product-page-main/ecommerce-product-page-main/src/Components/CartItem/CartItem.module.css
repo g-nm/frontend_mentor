@@ -1,0 +1,27 @@
+.cart__item_row {
+  display: grid;
+  grid-template-columns: 1fr 4fr auto;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--dark-grayish-blue);
+  margin-block: 1.5em;
+}
+.cart__image {
+  border-radius: 0.3em;
+}
+
+.p__remove_margin {
+  margin: 0;
+}
+.cart__item_total {
+  color: #000000;
+  font-weight: 700;
+}
+.cart__delete_button {
+  border: none;
+  background-color: transparent;
+}
+.cart__delete_icon {
+  fill: var(--grayish-blue);
+  cursor: pointer;
+}

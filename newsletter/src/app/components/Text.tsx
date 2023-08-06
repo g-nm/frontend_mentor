@@ -1,11 +1,11 @@
 import React from 'react';
 
-type TextType = {
+type TextProps = {
   children: React.ReactNode;
   className?: string;
 };
 
-function Text({ children, className }: TextType) {
+function Text({ children, className }: TextProps) {
   return <p className={` text-darkGrey ${className}`}>{children}</p>;
 }
 
